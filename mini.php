@@ -1,5 +1,8 @@
 <?php
 $title = "Mini Projects | Codes By Shadaine";
+$meta_title = "Mini Projects & Application | Codes By Shadaine";
+$description = "Codes By Shadaine, Mini projects is a great way to learn how to code. Counter, Random Background Color, Accordion, using HTML, CSS & JavaScript. ";
+$keywords="Codes, Codes By Shadaine, HTML, JavaScript, CSS, PHP, SASS, SCSS, Bootstrap, programming, signaturecodes, coding, documentation, shadaine black, tamoiblack, accordion, carousel, counter, random background color";
 $showcase_title = "Mini Projects";
 $showcase_img='images/woman-typing.jpg';
 require_once "inc/header.php";

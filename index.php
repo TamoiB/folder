@@ -1,5 +1,8 @@
 <?php 
 $title = "Home | Codes By Shadaine";
+$meta_title = "Codes By Shadaine | My Journey to Success";
+$description = "Codes By Shadaine, this body of work is a documentation of codes. This website consists of projects which are made using HTML, JavaScript, PHP, etc.";
+$keywords="Codes, Codes By Shadaine, HTML, JavaScript, CSS, PHP, SASS, SCSS, Bootstrap, programming, signaturecodes, coding, documentation, shadaine black, tamoiblack, password, generator, password generator";
 $showcase_title = "Welcome to Codes By Shadaine";
 $showcase_img = "images/black-woman-typing.jpg";
 require_once 'inc/header.php';

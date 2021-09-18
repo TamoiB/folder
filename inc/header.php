@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="<?php echo $meta_title; ?>">
+    <meta name="keywords" content="<?php echo $keywords;?>">
+    <meta name="description" content="<?php echo $description;?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Shadaine Black">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/70856632d3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -41,8 +48,8 @@
             class="showcase-img">
     </div>
     <section class="aside unselectable">
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-facebook-f"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/signaturecodes"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/codesbyshadaine"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/tamoiblack1"><i class="fab fa-twitter"></i></a>
         <a href=""><i class="fab fa-codepen"></i></a>
     </section>
