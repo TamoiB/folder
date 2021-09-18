@@ -1,0 +1,36 @@
+// Message for success of failure of submission of form
+$msg = '';
+$msgClass = '';
+//Checking for submit
+if(filter_has_var(INPUT_POST, 'submit')){
+//Form data
+$name = htmlspecialchars ($_POST['name']);
+$email = htmlspecialchars($_POST['email']);
+$subject = htmlspecialchars($_POST['subject']);
+$message = htmlspecialchars($_POST['message']);
+
+// Making each input required
+if (!empty($email) && !empty($name) && !empty($subject) && !empty($message)) {
+
+  // Valid Emails
+  if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+  $msg = 'Please enter valid email';
+ $msgClass = 'lead-danger';
+  } else {
+    //Connecting and adding to Database 
+    $conn = mysqli_connect("localhost", "root", "SHADAINE20", "phpblog");
+    $sql = " INSERT INTO contact(name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
+    mysqli_query($conn, $sql);
+$email = '';
+$name = '';
+$subject ='';
+$message = '';
+//Confirm Message
+ $msg = 'Thanks for submitting, we will reach out ASAP';
+ $msgClass = 'lead-success';
+}
+} else {
+ $msg = 'Please Fill out all fields';
+ $msgClass = 'lead-danger';
+}
+}
